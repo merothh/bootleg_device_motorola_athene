@@ -13,10 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit some common DU stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
-
 $(call inherit-product, device/motorola/athene/full_athene.mk)
+
+# Inherit some common Bootleggers stuff.
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -25,7 +25,7 @@ TARGET_BOOTANIMATION_HALF_RES := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := athene
-PRODUCT_NAME := du_athene
+PRODUCT_NAME := bootleg_athene
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := athene
